@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UI_CharacterInfo : UI
 {
-    private PlayerData data;
+    public StatsSO StatsSO { get; private set; }
     [SerializeField] private TextMeshProUGUI characterTypeTxt;
     [SerializeField] private TextMeshProUGUI characterNameTxt;
     [SerializeField] private TextMeshProUGUI characterLevelTxt;
@@ -12,9 +12,10 @@ public class UI_CharacterInfo : UI
     [SerializeField] private TextMeshProUGUI characterInfoTxt;
 
     [SerializeField] private Slider expSlider;
-    private void Start()
+    public override void Start()
     {
-        data = GameManager.Instance.playerData;
+        base.Start();
+        StatsSO = GameManager.Instance.player.GetComponent<CharacterStatsHandler>().CurrentStats.statsSO;
     }
     public override void OnUI()
     {
@@ -24,11 +25,11 @@ public class UI_CharacterInfo : UI
 
     public void UIUpdate()
     {
-        characterTypeTxt.text = data.CharacterType;
-        characterNameTxt.text = data.CharacterName;
-        characterLevelTxt.text = data.Level.ToString();
-        expTxt.text = data.Exp.ToString() + " / " + data.MaxExp.ToString();
-        characterInfoTxt.text = data.CharacterInfo;
-        expSlider.value = ((float)data.Exp) / data.MaxExp;
+        characterTypeTxt.text = StatsSO.characterType;
+        characterNameTxt.text = StatsSO.characterName;
+        characterLevelTxt.text = StatsSO.level.ToString();
+        expTxt.text = StatsSO.exp.ToString() + " / " + StatsSO.maxExp.ToString();
+        characterInfoTxt.text = StatsSO.characterInfo;
+        expSlider.value = ((float)StatsSO.exp) / StatsSO.maxExp;
     }
 }

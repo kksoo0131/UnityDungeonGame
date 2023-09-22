@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
     public UI_Main main;
     public UI_CharacterStatus status;
     public UI_Inventory inventory;
+    public UI_ItemEquip ItemEquip;
 
     private void Awake()
     {
