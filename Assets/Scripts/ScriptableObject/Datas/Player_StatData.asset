@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430226e5b8e081c4ea9b2ec918246dcd, type: 3}
+  m_Name: Player_StatData
+  m_EditorClassIdentifier: 
+  characterType: "\uCF54\uB529\uB178\uC608\uAC00 \uB418\uACE0\uC2F6\uC5B4"
+  characterName: NAME
+  characterInfo: "\uCDE8\uC5C5 \uD558\uACE0\uC2F6\uB2E4....."
+  level: 1
+  exp: 3
+  maxExp: 10
+  attack: 2
+  defense: 20
+  health: 100
+  critical: 5
