@@ -1,12 +1,19 @@
 # UnityDungeonGame
 전에 만들었던 C# text rpg를 이번에는 Unity로 만들어보자.
 
-# 필수 요구 사항
+## Contributor
+
+김광수
+
+## 선택 과제
+
+스파르타 던전 - Unity  버전!
+
+## 필수 요구 사항
 
 1. 메인 UI 구성
 2. Status UI 구성
 3. Inventory UI 구성
-
 
 
 ## [UIManager](https://github.com/kksoo0131/UnityDungeonGame/blob/main/Assets/Scripts/Manager/UIManager.cs)
