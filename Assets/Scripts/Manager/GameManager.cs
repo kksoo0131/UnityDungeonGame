@@ -6,13 +6,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public PlayerData playerData;
+    public GameObject player;
 
     private void Awake()
     {
         Instance = this;
-
-        playerData = new PlayerData();
     }
 
     private void Start()

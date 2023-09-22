@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc8913dd9da41c14cba6515424adc054, type: 3}
   m_Name: WoodenShield
   m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 615f3cdaa1374bd4db14286066f31cde, type: 3}
   itemName: WoodenShield
+  isEquip: 1
   defense: 5

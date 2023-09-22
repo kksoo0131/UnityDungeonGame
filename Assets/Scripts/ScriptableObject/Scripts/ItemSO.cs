@@ -6,5 +6,7 @@ using UnityEngine;
 public class ItemSO : ScriptableObject
 {
     [Header("Item Info")]
+    public Sprite image;
     public string itemName;
+    public bool isEquip;
 }

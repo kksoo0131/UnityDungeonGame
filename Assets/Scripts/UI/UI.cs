@@ -1,10 +1,11 @@
+using System;
 using UnityEngine;
 
 public class UI : MonoBehaviour
 {
     protected UIManager _manager;
 
-    private void Start()
+    public virtual void Start()
     {
         _manager = UIManager.Instance;
     }
